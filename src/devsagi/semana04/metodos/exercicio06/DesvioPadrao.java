@@ -8,21 +8,22 @@ public class DesvioPadrao {
         System.out.printf("Volatilidade: %.4f", resultado);
     }
 
-    public static double calcularVolatilidade(double[] acoes) {
-        double soma = 0, media, somaDosQuadrado = 0, desvioPadrao;
-
+    public static double calcularMedia(double[] acoes) {
+        double soma = 0;
         for (int i = 0; i < acoes.length; i++) {
             soma += acoes[i];
         }
-        media = soma / acoes.length;
+        return soma / acoes.length;
+    }
 
+    public static double calcularVolatilidade(double[] acoes) {
+        // calcula desvio padrão
+        double somaDosQuadrado = 0, desvioPadrao;
         for (int i = 0; i < acoes.length; i++) {
-            double diferenca = acoes[i] - media;
+            double diferenca = acoes[i] - calcularMedia(acoes);
             somaDosQuadrado += Math.pow(diferenca,2);
         }
         desvioPadrao = somaDosQuadrado / acoes.length;
-
         return Math.sqrt(desvioPadrao);
     }
-
 }
