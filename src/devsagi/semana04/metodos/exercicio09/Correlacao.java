@@ -1,6 +1,6 @@
-package devsagi.semana03.matrizes.exercicio08;
+package devsagi.semana04.metodos.exercicio09;
 
-public class Main {
+public class Correlacao {
     public static void main(String[] args) {
         double[] amostra1 = {100.0, 102.0, 104.0, 106.0};
         double[] amostra2 = {50.0, 51.0, 52.0, 53.0};
