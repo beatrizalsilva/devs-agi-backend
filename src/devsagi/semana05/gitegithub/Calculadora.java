@@ -1,4 +1,4 @@
-package com.agibank.semana05.gitegithub;
+package devsagi.semana05.gitegithub;
 
 public class Calculadora {
     public static void main(String[] args) {
