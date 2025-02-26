@@ -10,13 +10,9 @@ public class Main {
         c1.destampar();
         c1.escrever();
 
-        Livro romance = new Livro();
-        romance.titulo = "O Duque e Eu";
-        romance.autor = "Julia Quinn";
-        romance.paginas = 238;
+        Livro romance = new Livro("O Duque e Eu", "Julia Quinn", 238, "Arqueiro", false);
 
-        romance.lido = false;
         romance.status();
-        romance.releitura();
+        romance.ler();
     }
 }
